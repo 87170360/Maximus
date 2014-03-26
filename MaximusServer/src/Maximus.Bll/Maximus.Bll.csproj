@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EDF246F-C17C-4501-903A-8BB025A8E0EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maximus.Bll</RootNamespace>
+    <AssemblyName>Maximus.Bll</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_Linux|AnyCPU'">
+    <OutputPath>bin\Release_Linux\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronPython">
+      <HintPath>..\..\lib\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules">
+      <HintPath>..\..\lib\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="Maximus.Lang, Version=1.5.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Maximus.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Maximus.Model, Version=1.5.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Maximus.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic">
+      <HintPath>..\..\lib\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting">
+      <HintPath>..\..\lib\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\..\lib\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\lib\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack">
+      <HintPath>..\..\lib\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\..\lib\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZyGames.Framework">
+      <HintPath>..\..\lib\ZyGames.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ZyGames.Framework.Common">
+      <HintPath>..\..\lib\ZyGames.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ZyGames.Framework.Game">
+      <HintPath>..\..\lib\ZyGames.Framework.Game.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\Action100.cs" />
+    <Compile Include="Action\Action1000.cs" />
+    <Compile Include="Action\Action1002.cs" />
+    <Compile Include="Action\Action1004.cs" />
+    <Compile Include="Action\Action1005.cs" />
+    <Compile Include="Action\Action1006.cs" />
+    <Compile Include="Action\Action1007.cs" />
+    <Compile Include="Action\Action1065.cs" />
+    <Compile Include="Action\Action1066.cs" />
+    <Compile Include="Action\Action1069.cs" />
+    <Compile Include="Action\Action1080.cs" />
+    <Compile Include="Action\Action1081.cs" />
+    <Compile Include="Action\Action360.cs" />
+    <Compile Include="Action\Action404.cs" />
+    <Compile Include="Action\ActionIDDefine.cs" />
+    <Compile Include="Action\BaseAction.cs" />
+    <Compile Include="Base\AppstoreClientManager.cs" />
+    <Compile Include="Base\AppStoreHelper.cs" />
+    <Compile Include="Base\PaymentService.cs" />
+    <Compile Include="Base\PythonHelper.cs" />
+    <Compile Include="Com\Chat\DdzBroadcastService.cs" />
+    <Compile Include="Com\Chat\DdzChatService.cs" />
+    <Compile Include="Com\Rank\BeansRanking.cs" />
+    <Compile Include="Com\Rank\WinRanking.cs" />
+    <Compile Include="Com\Share\DdzPaymentNotify.cs" />
+    <Compile Include="Logic\AchieveTask.cs" />
+    <Compile Include="Logic\CardRole.cs" />
+    <Compile Include="Logic\ClientNotifier.cs" />
+    <Compile Include="Logic\GameHall.cs" />
+    <Compile Include="Com\Share\RoleFunc.cs" />
+    <Compile Include="GameHostApp.cs" />
+    <Compile Include="Logic\GameRoom.cs" />
+    <Compile Include="Logic\GameTable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
